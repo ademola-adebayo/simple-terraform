@@ -104,7 +104,7 @@ resource "aws_route_table" "dev-public-RT" {
      Name = "dev-public-RT"
    }
 }
-i
+
 # Route Associations Private
 resource "aws_route_table_association" "dev-public-1-RTA" {
    subnet_id       = aws_subnet.dev-public-subnet-1.id

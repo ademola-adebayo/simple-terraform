@@ -12,3 +12,10 @@ variable "AMIS" {
   }
 }
 
+variable "PATH_TO_PRIVATE_KEY" {
+  default = "dev-key"
+}
+
+variable "PATH_TO_PUBLIC_KEY" {
+  default = "dev-key.pub"
+}

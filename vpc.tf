@@ -122,8 +122,8 @@ resource "aws_route_table_association" "dev-public-3-RTA" {
 }
 
 
-output "dev-public-subnet-id" {
-   value = aws_subnet.dev-subnet.id
+output "dev-public-subnet-1-id" {
+   value = aws_subnet.dev-public-subnet-1.id
 }
 
 output "dev-vpc-id" {

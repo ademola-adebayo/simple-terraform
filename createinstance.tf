@@ -1,5 +1,4 @@
-#Creat EC2 Instance
-
+# Creat EC2 Instance
 data "aws_ami" "latest-ubuntu" {
    most_recent = true
    owners = ["099720109477"]

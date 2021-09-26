@@ -1,21 +1,6 @@
-/*variable "location" {
-  type            =  string
-  description     = "The AWS Region to deploy resources"
-  
-  validation {
-    error_message = "Unsupported Aws Region specified?"
-  }
-}*/
-
 variable "AWS_REGION" {
   default = "us-east-2"
 }
-
-variable "Security_Group" {
-  type = list
-  default = ["sg-24076", "sg-988776", "sg-776666"]
-}
-
 
 variable "AMIS" {
   type = map

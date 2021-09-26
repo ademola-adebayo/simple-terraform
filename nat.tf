@@ -11,7 +11,7 @@ resource "aws_nat_gateway" "dev-NAT-GW" {
 }
 
 
-resource "aws_route_table" "dev-private" {
+resource "aws_route_table" "dev-private-RT" {
   vpc_id  = aws_vpc.development-vpc.id
   route {
    cidr_block  = "0.0.0.0/0"

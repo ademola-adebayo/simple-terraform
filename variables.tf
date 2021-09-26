@@ -1,12 +1,14 @@
-#variable "AWS_SECRET_KEY" {}
-
-variable "location" {
+/*variable "location" {
   type            =  string
   description     = "The AWS Region to deploy resources"
   
-  #validation {
-   # error_message = "Unsupported Aws Region specified?"
-  #}
+  validation {
+    error_message = "Unsupported Aws Region specified?"
+  }
+}*/
+
+variable "AWS_REGION" {
+  default = "us-east-2"
 }
 
 variable "Security_Group" {
@@ -25,14 +27,3 @@ variable "AMIS" {
   }
 }
 
-variable "PATH_TO_PRIVATE_KEY" {
-  default = "levelup_key"
-}
-
-variable "PATH_TO_PUBLIC_KEY" {
-  default = "levelup_key.pub"
-}
-
-variable "INSTANCE_USERNAME" {
-  default = "ubuntu"
-}

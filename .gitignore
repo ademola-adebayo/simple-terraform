@@ -18,3 +18,5 @@ terraform.rc
 
 # ignore crash logs
 crash.log
+dev-key
+dev-key.pub
